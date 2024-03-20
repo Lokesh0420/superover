@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: lime;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center; font-size: 40px; margin-top: 8px;padding-bottom: -2px;">Super Over Match!</h1>
+    <div class="main">
+        
+        <br>
+        <div class="csk">
+            <img src="./csk.jpg" alt="cskimg"><br>
+            <h1  style="padding-left: 75px;padding-top: 25px;">CSK</h1><br>
+            <div class="over" id="team1scores">
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            </div>
+            <br>
+            <div class="play">
+                <input type="submit" value="BATTING" id="strike" onclick="handleStrike()" style="border-radius: 40px; margin-left: 70px; padding: 8px; background-color: rgb(187, 52, 4);">
+            </div>
+            
+        </div>
+        <div class="score" style="color: white;">
+            <div id="team1score">
+                <h2>0</h2>
+            </div>
+            <h2>-</h2>
+            <div id="team2score">
+                <h2>0</h2>
+            </div>
+        </div>
+        <div class="rcb">
+            <img src="./rcb.jpg" alt="cskimg"><br>
+            <h1 style="padding-left: 75px;padding-top: 25px;">RCB</h1><br>
+            <div class="over" id="team2scores">
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            <div id="circle"><h2>-</h2></div>
+            </div>
+            <br>
+            <div class="play">
+                
+                <input type="submit" value="RESET" id="try" onclick="window.location.reload()" style="border-radius: 40px; margin-left: 70px; padding: 8px; background-color: rgb(187, 52, 4);">
+            </div>
+
+            
+            
+        </div>
+       
+
+    </div>
+    <br>
+    <div style="margin-left: 290px;margin-top: 20px;">
+        <h2 style="background-color: yellow;color:black;text-align: center; width: 1000px;padding: 8px;border-radius: 40px;" id="results">
+            Match Start!!!
+        </h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
